@@ -1,0 +1,16 @@
+with the help of this poliy we will give permanent access of s3 bucket 
+go to s3 then select bucket then permission and then buket policy the edit and copy this contain and paste it then save
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::03july2022-mp3/*"
+        }
+    ]
+}
